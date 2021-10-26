@@ -19,8 +19,14 @@ public class Productos {
     public Productos() {
         
     }
+
+    public Productos(String nombre) {
+        this.nombre = nombre;
+    }
+    
     //con parametros
      public Productos(String tipo, String nombre,int cantidad, double precioUnitario) {
+        this(); 
         this.tipo = tipo;
         this.nombre = nombre;
         this.cantidad = cantidad;
